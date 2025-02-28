@@ -1,2 +1,3 @@
 com.lartimes.service.impl.WXPaymentServiceImpl
 com.lartimes.service.impl.ZFBPaymentServiceImpl
+#com.lartimes.service.impl.CardPaymentServiceImpl
