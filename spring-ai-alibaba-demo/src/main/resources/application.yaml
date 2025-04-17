@@ -1,0 +1,16 @@
+server:
+  port: 9988
+
+spring:
+  application:
+    name: spring-ai-alibaba-deepseek-chat-model-example
+
+  ai:
+    openai:
+      api-key: ${AI_DASHSCOPE_API_KEY}
+      base-url: https://api.deepseek.com
+      chat:
+        options:
+          model: deepseek-chat
+    dashscope:
+      api-key: ${AI_DASHSCOPE_API_KEY}
