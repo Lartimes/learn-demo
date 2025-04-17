@@ -9,6 +9,7 @@ public class Main {
                 .modelName("gpt-4o-mini")
                 .build();
         String answer = model.chat("Say 'Hello World'");
+
         System.out.println(answer); // Hello World
     }
 }
