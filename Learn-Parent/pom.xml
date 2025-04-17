@@ -10,6 +10,9 @@
     <!--    <modules>-->
     <!--        <module>../SPI-MultiModules</module>-->
     <!--    </modules>-->
+    <properties>
+
+    </properties>
     <dependencyManagement>
         <dependencies>
             <dependency>
