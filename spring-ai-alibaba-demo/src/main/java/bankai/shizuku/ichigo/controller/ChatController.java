@@ -20,8 +20,6 @@ public class ChatController {
     public Generation chat(@PathVariable(value = "prompt") String prompt) {
 
         ChatResponse chatResponse = deepSeekChatModel.call(new Prompt(prompt));
-//        deepSeekChatModel.stream()
-
         return chatResponse.getResult();
     }
 
