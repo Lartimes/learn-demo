@@ -13,4 +13,7 @@ spring:
         options:
           model: deepseek-chat
     dashscope:
-      api-key: ${AI_DASHSCOPE_API_KEY}
+      api-key: sk-8b67da98807649bb9886327549af564f
+      chat:
+        options:
+          model: qwq-plus-latest
