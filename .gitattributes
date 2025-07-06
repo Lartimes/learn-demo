@@ -1,1 +1,7 @@
-* text=auto
+# 强制所有文本文件使用 LF
+* text=auto eol=lf
+
+# 可选：排除二进制文件
+*.jpg binary
+*.png binary
+*.jar binary
