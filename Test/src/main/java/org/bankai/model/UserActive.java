@@ -9,5 +9,4 @@ public class UserActive {
     private Integer userId;
     private Date lastActive;
     private Date expireTime;
-    private Date loginTime;
 }
