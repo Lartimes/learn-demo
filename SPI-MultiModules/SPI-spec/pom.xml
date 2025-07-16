@@ -6,10 +6,10 @@
     <parent>
         <groupId>com.lartimes</groupId>
         <artifactId>SPI-MultiModules</artifactId>
+        <relativePath>./../pom.xml</relativePath>
         <version>1.0</version>
     </parent>
 
-    <groupId>com.lartimes</groupId>
     <artifactId>SPI-spec</artifactId>
 
     <properties>

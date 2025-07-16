@@ -4,10 +4,12 @@ server:
 spring:
   application:
     name: spring-ai-alibaba-deepseek-chat-model-example
-
+  main:
+    allow-bean-definition-overriding: true
+    allow-circular-references: true
   ai:
     openai:
-      api-key: ${AI_DASHSCOPE_API_KEY}
+      api-key: ${DASHSCOPE_API_KEY}
       base-url: https://api.deepseek.com
       chat:
         options:
@@ -17,3 +19,8 @@ spring:
       chat:
         options:
           model: qwq-plus-latest
+      embedding:
+        api-key: sk-8b67da98807649bb9886327549af564f
+        options:
+          model: text-embedding-v4
+          dimensions: 1024

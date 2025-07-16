@@ -6,10 +6,12 @@
     <parent>
         <groupId>com.lartimes</groupId>
         <artifactId>SPI-MultiModules</artifactId>
+        <relativePath>./../pom.xml</relativePath>
         <version>1.0</version>
     </parent>
-
+    <groupId>com.lartimes</groupId>
     <artifactId>SPI-provider-wx</artifactId>
+    <version>1.0</version>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
