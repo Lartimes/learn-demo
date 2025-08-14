@@ -1,0 +1,40 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /sse
+
+
+spring:
+  mvc:
+    async:
+      request-timeout: 10s
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: 307314
+    username: root
+    url: jdbc:mysql://localhost:3306/learn_demo
+
+
+
+mybatis:
+#  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: org.bankai.model
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
+    cache-enabled: true
+    lazy-loading-enabled: true
+    aggressive-lazy-loading: false
+
+#   // 心跳间隔时间（毫秒）
+#    @Value("${sse.heartbeat:2000}")
+#    private long heartbeatInterval;
+#    // 清理失效连接的间隔时间
+#    @Value("${sse.clear:20000}")
+#    private long cleanupInterval;
+#    @Value("${sse.timeout:2000}")
+#    private long timeout = 2000;
+sse:
+  heartbeat: 2000
+  clear: 20000
+

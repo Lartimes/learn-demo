@@ -1,5 +1,9 @@
 package org.bankai.rag.chunks;
 
+
+/**
+ * 有问题，这个只适合byte 纯文本啊
+ */
 public enum FileChunksStrategy {
 
     DATA_BUFFER, // 多线程 + DataBuffer
